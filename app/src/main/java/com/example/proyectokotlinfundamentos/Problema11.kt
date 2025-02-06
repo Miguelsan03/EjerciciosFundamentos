@@ -12,5 +12,20 @@ fun main() {
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema11() {
     // Desarrolle aquí la lógica
-
+    println("Dame el presupuesto:")
+    val pre = readln().toInt()
+    println("Dame el valor de la comida:")
+    val comida = readln().toInt()
+    println("Dame el valor de la electricidad:")
+    val electricidad = readln().toInt()
+    println("Dame el valor del internet:")
+    val internet = readln().toInt()
+    println("Dame el valor del arriendo:")
+    val arriendo = readln().toInt()
+    val gastos = comida+electricidad+internet+arriendo
+    if (pre<gastos){
+        println("Rayos estoy quebrado(a)!")
+    } else {
+        println("Vamos melos!")
+    }
 }

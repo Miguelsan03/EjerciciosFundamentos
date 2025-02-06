@@ -12,5 +12,12 @@ fun main() {
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema15() {
     // Desarrolle aquí la lógica
-
+    println("Dame un numero de 4 cifras:")
+    val numero = readln().toString()
+    var rev = numero.reversed()
+    if (numero==rev){
+        println("SÍ")
+    } else {
+        println("NO")
+    }
 }

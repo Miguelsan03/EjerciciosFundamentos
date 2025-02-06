@@ -1,6 +1,6 @@
 package com.example.proyectokotlinfundamentos
 
-// Nombre:
+// Nombre: Miguel Santamaria
 // Fecha:
 // Descripción: Solución del Problema 1 de la guía de Kotlin fundamentos
 
@@ -12,5 +12,5 @@ fun main() {
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema1() {
     // Desarrolle aquí la lógica
-
+    println("Hola Mundo Kotlin!")
 }
