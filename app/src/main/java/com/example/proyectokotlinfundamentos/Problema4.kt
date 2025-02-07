@@ -13,11 +13,14 @@ fun main() {
 fun problema4() {
     // Desarrolle aquí la lógica
     println("Ingresa valor artículo 1:")
-    val a = readln().toFloat()
+    val a = readlnOrNull()?.toDoubleOrNull()
     println("Ingresa valor artículo 2:")
-    val b = readln().toFloat()
+    val b = readlnOrNull()?.toDoubleOrNull()
     println("Ingresa valor artículo 3:")
-    val c = readln().toFloat()
-    val imp = (a+b+c)*0.18
-    println("Valor neto: ${a+b+c} \n Valor total: ${a+b+c+imp}")
+    val c = readlnOrNull()?.toDoubleOrNull()
+    if (a!!>0 && b!!>0 && c!!>0 ) {
+        val neto = a + b + c
+        val imp = neto*1.18
+        println("Valor neto: $neto\nValor total: $imp")
+    }
 }
